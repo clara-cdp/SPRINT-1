@@ -1,0 +1,122 @@
+*{
+    padding: 0;
+    margin: 0;   
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    justify-content: center;
+}
+
+.container {
+    background: rgb(0, 0, 0);
+    width:100%;
+    max-width:1200px;
+    height: wrap;
+    padding: 10px 20px;
+    margin: 10px; 
+    
+    display: flex; 
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.subcontainer { 
+    /* height:wrap; */
+    width:100%;
+    padding: 10px;
+    margin: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#sub_1 {
+    background-color: #2d4059;
+    flex-direction: row;
+}
+
+#sub_2 {
+    background-color:#f07b3e;
+    flex-direction: column; 
+}
+
+#column_1 {
+    background-color: #ea5455;
+    height: 10px;
+    width: 20%;
+    padding: 10px;
+    margin: 10px;   
+}
+
+#column_2 {
+    background-color: #ea5455;
+    height: 10px;
+    width: 80%;
+    padding: 10px;
+    margin: 10px;   
+}
+
+#sub_2_child{
+    background-color: #fed460;
+    height: 10px;
+    width: 100%;
+    padding: 10px;
+    margin: 10px;   
+}
+
+/*  ----------------- CONTAINER 2 ----------------  */
+
+#cont_2 {
+    flex-direction: row;
+    align-items:center;
+     justify-content: space-between;
+}
+
+#sub_3 {
+    background-color: #4d4d6a;
+    width: 70%;
+    display: block;
+    flex-direction: start;    
+}
+
+.sub_3_child {
+    background-color:#1f6cb0;
+    height: 20px;
+    width:50%;
+    padding: 10px;
+    margin: 10px;  
+}
+
+#sub_3_last_row {
+    background-color: #70a3c4;
+    height: 20px;
+    width: 100%;
+}
+
+#sub_4 {
+    background-color: #f73f52;
+    width: 30%;
+    height:100%;
+    flex-direction:column;
+    align-items: flex-start;
+
+}
+
+.sub_4_child {
+    background-color: #feea85;
+    height: 20px;
+    width: 100%;
+    margin: 5px;
+}
+
+/* ---------------- CONTAINER 5 ---------------*/
+
+#sub_5 {
+    background-color: #e6af2e;
+    height: 1px;
+}
