@@ -112,4 +112,25 @@ body {
     background-color: #e6af2e;
 }
 
-/* --------------- MEDIA QUERIES --------------- */
+
+/* --------------- MEDIA QUERIES -------------------------- */
+
+/*------------------- tablet -------------------------------*/
+@media (max-width: 768px) {         
+    #cont_2 {
+        background-color: yellow;
+        flex-direction: column;
+    }
+}
+
+/*------------------- mobile -------------------------------*/
+@media (max-width: 480px) {         
+    #sub_1 {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #sub_1_childA, #sub_1_childB {
+        width: 100%;
+    }
+}
