@@ -124,13 +124,3 @@ body {
 }
 
 /*------------------- mobile -------------------------------*/
-@media (max-width: 480px) {         
-    #sub_1 {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    #sub_1_childA, #sub_1_childB {
-        width: 100%;
-    }
-}
