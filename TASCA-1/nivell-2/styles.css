@@ -27,6 +27,10 @@ nav ul {
     align-items: center;
 }
 
+#disfruta_mob{
+    display: none;
+}
+
 #disfruta{
     height:150px;
     background-color: black;
@@ -37,7 +41,7 @@ nav ul {
     text-align: center;
     font-size: 1.5em;
     color: coral;
-    opacity: 50%;
+    opacity: 40%;
 }
 
 #wrapper{
@@ -84,7 +88,7 @@ article h2{
     color: white;
     text-transform: uppercase;
     font-weight: bold;
-    padding: 3px;
+    padding: 3px 10px;
 }
 article p{
     column-count: 2;
@@ -104,3 +108,66 @@ article p{
     margin-top: 25px;
 }
  
+/*------------------- tablet -------------------------------*/
+@media (max-width: 768px) {
+    #wrapper{
+        flex-direction: column;
+        align-items: center;
+    }
+    #container {
+        width:100%;
+    }
+    #sidebar {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        float:none;
+    }
+    article{
+        width: 100%;
+    }
+}
+
+/*------------------- mobile -------------------------------*/
+@media (max-width: 480px) {
+
+    header{
+        height: 200px;
+    }
+
+    
+    #disfruta_mob {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        color: salmon;
+        font-size:1,80em;
+        font-weight: bolder;
+        gap:10px;
+        padding:20px;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        background-blend-mode:lighten;
+       }
+
+    nav ul {
+        display: none    
+    }
+
+
+    #disfruta{
+        display: none;
+    }
+
+    article h2{
+    font-size: 18px;
+    letter-spacing: 1px;
+}
+
+    article p{
+        min-width: 300px;
+        column-count: 1;
+    }
+
+}
