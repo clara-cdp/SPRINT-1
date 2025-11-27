@@ -129,6 +129,11 @@ article p {
     padding: 20px 5px 0px;
 }
 
+.read:hover {
+    color: rgb(93, 62, 228);
+    text-decoration: underline;
+}
+
 #sidebar {
     background-color: lightgray;
     width: 25%;
