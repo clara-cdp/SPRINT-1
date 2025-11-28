@@ -1,8 +1,12 @@
 * {
-    margin: 0;
+
     padding: 0;
     box-sizing: border-box;
     max-width: 1200px;
+}
+
+html {
+    margin: auto;
 }
 
 body {
@@ -19,6 +23,7 @@ body {
     justify-items: center;
     grid-gap: 10px;
     font-size: 12px;
+
 }
 
 header {
@@ -31,9 +36,30 @@ header {
     height: 270px;
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: auto;
-    justify-content: space-between;
+    grid-template-rows: 1fr 1fr;
+
 }
+
+#logico {
+    animation-name: logoAnimation;
+    animation-duration: 2s;
+}
+
+
+@keyframes logoAnimation {
+    0% {
+        width: 50px;
+    }
+
+    50% {
+        width: 100px;
+    }
+
+    100% {
+        width: 50px;
+    }
+}
+
 
 nav ul {
     height: 100px;
@@ -50,6 +76,7 @@ nav ul li:hover {
     cursor: pointer;
     font-size: 16px;
     transition: all 0.1s ease-in-out;
+    cursor: pointer;
 }
 
 #disfruta_mob {
@@ -58,15 +85,53 @@ nav ul li:hover {
 
 #disfruta {
     height: 85px;
-    margin: 0px 30px;
+    margin: 0px 40px;
     background-color: rgb(239, 235, 235);
+    align-self: end;
     font-family: 'Times New Roman', Times, serif;
     text-align: center;
-    font-size: 2em;
+    padding-top: 5px;
+    mix-blend-mode: multiply;
+}
+
+#disfruting {
+    font-size: 2.3em;
     color: salmon;
     opacity: 100%;
-    /* mix-blend-mode: darken; */
-    mix-blend-mode: multiply;
+
+    animation-name: disfrutation;
+    animation-duration: 3s;
+    animation-timing-function: ease-in-out;
+    /* animation-delay: 2s; */
+}
+
+@keyframes disfrutation {
+    0% {
+        font-size: 2.3em;
+        color: salmon;
+    }
+
+    25% {
+        color: blue;
+        opacity: 100%;
+    }
+
+    50% {
+        font-size: 3em;
+        color: red;
+        opacity: 100%;
+    }
+
+    75% {
+        color: blue;
+        opacity: 100%;
+    }
+
+    100% {
+        font-size: 2.3em;
+        color: salmon;
+        opacity: 100%;
+    }
 }
 
 #wrapper {
@@ -87,8 +152,8 @@ nav ul li:hover {
     justify-content: center;
     align-content: center;
     grid-auto-rows: auto;
-}
 
+}
 
 article {
     background-color: white;
@@ -101,15 +166,18 @@ article {
 }
 
 article:hover {
-    box-shadow: 10px 0px 10px rgba(228, 6, 6, 0.449);
-    transition: all 0.3s ease-in-out;
+    transition: all 0.2s ease-in-out;
+    scale: 1.02;
+    border: 2px solid rgb(166, 75, 75);
+    border-radius: 3%;
+    -webkit-box-shadow: 0px 0px 11px 6px salmon;
+    box-shadow: 0px 0px 11px 6px salmon;
 }
 
 article img {
     width: 100%;
     aspect-ratio: 2/1;
     object-fit: cover;
-    margin-bottom: 2px;
 }
 
 .fotico {
@@ -120,7 +188,6 @@ article img {
 .fechita {
     position: absolute;
     color: yellow;
-
     bottom: 8px;
     left: 16px;
 }
@@ -137,12 +204,13 @@ article h2 {
 
 article p {
     column-count: 2;
-    padding: 20px 5px 0px;
+    padding: 2px;
 }
 
 .read:hover {
     color: rgb(93, 62, 228);
     text-decoration: underline;
+    cursor: pointer;
 }
 
 #sidebar {
